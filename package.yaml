@@ -1,0 +1,48 @@
+name:                cc-optimizer
+version:             0.1.0.0
+github:              "githubuser/cc-optimizer"
+license:             MIT
+author:              "Stefan Groth"
+maintainer:          "stefan.groth@outlook.com"
+copyright:           "2021 Stefan Groth"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/StefanGroth/cc-optimizer#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  cc-optimizer:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cc-optimizer
+
+tests:
+  cc-optimizer-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - cc-optimizer
+    - HUnit-Plus

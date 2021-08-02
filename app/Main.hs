@@ -45,14 +45,14 @@ grannyBonus=addPercentTo $ toRational grannyCount
 
 buildings =
   [ Building "Cursor" 100 15 0.1 [doubleN 3],
-    Building "Grandma" grannyCount 100 1 [doubleN 11],
+    Building "Grandma" grannyCount 100 1 [doubleN 12],
     Building "Farm" 100 1100 8 [doubleN 5, grannyBonus],
     Building "Mine" 73 (1.2 * 10 ^ 4) 47 [doubleN 4, grannyBonus],
     Building "Factory" 66 (1.3 * 10 ^ 5) 260 [doubleN 4, grannyBonus],
-    Building "Bank" 51 (1.4 * 10 ^ 6) 1400 [doubleN 3, sugarLumps 1, grannyBonus],
-    Building "Temple" 46 (2 * 10 ^ 7) 7800 [doubleN 3, sugarLumps 1, grannyBonus],
-    Building "Wizard Tower" 31 (3.3 * 10 ^ 8) (4.4*10^4) [doubleN 2, sugarLumps 1, grannyBonus],
-    Building "Shipment" 15 (5.1 * 10 ^ 9) (2.6*10^5) [doubleN 1],
+    Building "Bank" 68 (1.4 * 10 ^ 6) 1400 [doubleN 4, sugarLumps 1, grannyBonus],
+    Building "Temple" 50 (2 * 10 ^ 7) 7800 [doubleN 3, sugarLumps 1, grannyBonus],
+    Building "Wizard Tower" 37 (3.3 * 10 ^ 8) (4.4*10^4) [doubleN 2, sugarLumps 1, grannyBonus],
+    Building "Shipment" 18 (5.1 * 10 ^ 9) (2.6*10^5) [doubleN 1],
     Building "Alchemy Lab" 6 (7.5 * 10 ^ 10) (1.6*10^6) []
   ]
 
